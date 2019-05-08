@@ -1,0 +1,19 @@
+{
+  "name": "css-visual-demos",
+  "version": "1.0.0",
+  "description": "css demos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shuzile/CSS-visual-demos.git"
+  },
+  "author": "shuzile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shuzile/CSS-visual-demos/issues"
+  },
+  "homepage": "https://github.com/shuzile/CSS-visual-demos#readme"
+}
