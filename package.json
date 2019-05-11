@@ -4,7 +4,8 @@
   "description": "css demos",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "img": "node ./src/imgs.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/shuzile/CSS-visual-demos/issues"
   },
-  "homepage": "https://github.com/shuzile/CSS-visual-demos#readme"
+  "homepage": "https://github.com/shuzile/CSS-visual-demos#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
 }
