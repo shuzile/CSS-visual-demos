@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .tags {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        border: 1px solid gray;
+        padding: 5px;
+        padding-bottom: 0px;
+        padding-left: 20px;
+        width: 300px;
+      }
+      .tags li {
+        max-width: 8em;
+        margin-bottom: 5px;
+        margin-right: 1em;
+      }
+      .tags a {
+        position: relative;
+        background-color: blue;
+        color: white;
+        text-decoration: none;
+        padding: 0px 5px;
+        font-size: 25px;
+      }
+      .tags a:before {
+        position: absolute;
+        top: 0;
+        left: -1em;
+        content: "";
+        width: 0;
+        height: 0;
+        border: 0.5em solid transparent;
+        border-right-width: 0.5em;
+        border-right-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="tags">
+      <li><a href="">List</a></li>
+      <li><a href="">Button</a></li>
+      <li><a href="">Select</a></li>
+      <li><a href="">Form</a></li>
+      <li><a href="">FormItem</a></li>
+      <li><a href="">Table</a></li>
+      <li><a href="">Footer</a></li>
+      <li><a href="">Header</a></li>
+      <li><a href="">aside</a></li>
+      <li><a href="">List</a></li>
+    </ul>
+
+    <div>
+      为什么标签的字比箭头高出几像素，行高比字体实际大小多出几像素
+    </div>
+  </body>
+</html>
