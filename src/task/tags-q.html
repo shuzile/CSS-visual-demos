@@ -10,23 +10,24 @@
         display: flex;
         flex-wrap: wrap;
         list-style: none;
-        border: 1px solid gray;
         padding: 5px;
         padding-bottom: 0px;
         padding-left: 20px;
         width: 300px;
+        border: 1px solid gray;
       }
       .tags li {
-        max-width: 8em;
+        display: inline-block;
         margin-bottom: 5px;
-        margin-right: 1em;
+        margin-right: 15px;
+        max-width: 8em;
       }
       .tags a {
         position: relative;
+        padding: 0px 5px;
         background-color: blue;
         color: white;
         text-decoration: none;
-        padding: 0px 5px;
         font-size: 25px;
       }
       .tags a:before {
@@ -57,7 +58,15 @@
     </ul>
 
     <div>
-      为什么标签的字比箭头高出几像素，行高比字体实际大小多出几像素
+      <p>
+        ? 为什么标签的字比箭头高出几像素，行高比字体实际大小多出几像素
+      </p>
+      <p>
+        max-width可以控制flex元素的宽度
+      </p>
+      <p>
+        算清楚箭头元素实际宽度，是border的两倍
+      </p>
     </div>
   </body>
 </html>

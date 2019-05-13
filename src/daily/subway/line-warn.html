@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .line {
+        display: flex;
+        justify-content: space-around;
+        background-color: gray;
+      }
+      .block {
+        position: relative;
+        background-color: orange;
+        width: 70px;
+        height: 30px;
+      }
+      .block::before {
+        position: absolute;
+        left: -30px;
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 15px solid transparent;
+        border-top: 15px solid orange;
+        border-right: 15px solid orange;
+      }
+      .block::after {
+        position: absolute;
+        right: -30px;
+        content: "";
+        width: 0px;
+        height: 0px;
+        border: 15px solid transparent;
+        border-bottom: 15px solid orange;
+        border-left: 15px solid orange;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="line">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+  </body>
+</html>
