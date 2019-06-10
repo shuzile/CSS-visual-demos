@@ -1,20 +1,21 @@
 # 20190508
 
-flex.html float.html
+demo1:flex.html
+demo2:float.html
 github + codesandbox
 
 #20190509
-flex-p.html
+demo3:flex-p.html
 
 #20190510
-daily/subway
+demo4:daily/subway
 
 #20190511
-daily/subway2 flex 方式优化
+demo5:daily/subway2 flex 方式优化
 熟悉 css3 的 background 新特性: 多图，position clip origin
 
 #20190512
-tags-q.html
+demo6: tags-q.html
 
 #20190513
-line-warn.html
+demo7: line-warn.html
