@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      .wrapper {
+        margin: 0 auto;
+        width: 600px;
+      }
+      .item {
+        position: relative;
+        display: flex;
+        height: 120px;
+        width: 100%;
+        left: -45px;
+        text-align: left;
+      }
+      .item .item-header {
+        width: 90px;
+        border: 1px solid gray;
+        border-right-width: 0px;
+        border-top-left-radius: 9999px;
+        border-bottom-left-radius: 9999px;
+      }
+      .item .item-content {
+        flex: 1;
+        border-top: 1px solid gray;
+      }
+      .reverse {
+        flex-direction: row-reverse;
+        left: 45px;
+        margin-top: -1px;
+        margin-bottom: -1px;
+        text-align: right;
+      }
+      .reverse .item-header {
+        border-right-width: 1px;
+        border-left-width: 0px;
+        border-top-right-radius: 999px;
+        border-bottom-right-radius: 999px;
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="item">
+        <div class="item-header"></div>
+        <item class="item-content">
+          <div>呵呵</div>
+          <div>2019.06.01</div>
+        </item>
+      </div>
+      <div class="item reverse">
+        <div class="item-header"></div>
+        <item class="item-content">
+          <div>哈哈</div>
+          <div>2019.06.11</div>
+        </item>
+      </div>
+      <div class="item">
+        <div class="item-header"></div>
+        <item class="item-content"></item>
+      </div>
+      <div class="item reverse">
+        <div class="item-header"></div>
+        <item class="item-content"></item>
+      </div>
+      <div class="item"></div>
+    </div>
+    <div class="info">
+      <ol>
+        <li>
+          margin的负边距导致元素内容区域扩大
+        </li>
+        <li>
+          position relative 只是平移，只能设定一边：left>right,top>bottom
+        </li>
+        <li>
+          长圆角形
+        </li>
+        <li></li>
+      </ol>
+    </div>
+  </body>
+</html>
